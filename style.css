@@ -1,11 +1,10 @@
 /* --- Document Basics & Font Reset --- */
 body {
-    background-color: #f0f4f8; /* Crisp, cool light blue canvas background */
-    color: #1a2a3a; /* High contrast dark charcoal-blue text */
-    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    background-color: #dbeafe !important; /* A slightly richer, darker pastel ice blue */
+    color: #0f172a !important;
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif !important;
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
 }
 
 .container {
@@ -16,12 +15,12 @@ body {
 
 /* --- Fixed Top Navbar --- */
 .navbar {
-    background-color: #0a192f; /* Deep Royal Navy */
+    background-color: #0f172a;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    border-bottom: 3px solid #d61c6a; /* Rich dark pink accent line */
+    border-bottom: 4px solid #ef4444;
 }
 
 .logo {
@@ -31,72 +30,72 @@ body {
 }
 
 .nav-links a {
-    color: #cbd5e1;
+    color: #94a3b8;
     text-decoration: none;
     font-weight: 600;
     margin-left: 20px;
-    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #ff60a0; /* Shines dark pink on hover */
+    color: #ef4444;
 }
 
 /* --- Real-Time Counter Bar --- */
 .donation-tracker-bar {
-    background-color: #162a45; /* Medium deep blue */
+    background-color: #1e293b; 
     color: #ffffff;
     text-align: center;
     padding: 12px 0;
     font-weight: 700;
-    border-bottom: 2px solid #1b3a6b;
+    border-bottom: 2px solid #ef4444; 
 }
 
 #total-raised {
     font-size: 1.2rem;
-    color: #ff60a0;
+    color: #ef4444; 
     font-weight: 800;
-    transition: color 0.2s;
 }
 
 /* --- Hero Banner Section --- */
 .hero {
-    background: linear-gradient(135deg, #0f2b46 0%, #1a365d 100%);
+    background: linear-gradient(135deg, #102a43 100%, #1e3a5f 0%);
     color: #ffffff;
     text-align: center;
     padding: 80px 20px;
+    border-bottom: 4px solid #ef4444;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin: 0 0 15px 0;
     font-weight: 800;
-    letter-spacing: -1px;
 }
 
 .hero p {
     max-width: 700px;
     margin: 0 auto;
     font-size: 1.15rem;
-    line-height: 1.6;
-    color: #e2e8f0;
+    color: #cbd5e1;
 }
 
-/* --- Section Layout Structural Adjustments --- */
+/* --- Section Titles --- */
 h2 {
     font-size: 2rem;
     font-weight: 700;
-    color: #0a192f;
+    color: #0f172a;
     margin-bottom: 10px;
+    border-left: 5px solid #ef4444; 
+    padding-left: 12px;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 30px;
+    border-left: none;
+    padding-left: 0;
 }
 
 .subtitle {
-    color: #4a5568;
+    color: #475569;
     margin-top: 0;
     margin-bottom: 30px;
 }
@@ -114,17 +113,16 @@ section {
 }
 
 .tracker-box {
-    background-color: #ffffff;
-    border: 2px solid #d1dbe5; /* Slate blue-grey boundaries */
+    background-color: #ffffff !important;
+    border: 2px solid #7dd3fc !important; /* Darker, clearer blue border */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
 .tracker-box h4 {
     margin: 10px 0 5px 0;
-    color: #1a2a3a;
+    color: #0f172a;
 }
 
 .tracker-box p {
@@ -136,17 +134,16 @@ section {
 .stat-number {
     font-size: 2rem;
     font-weight: 800;
-    color: #1b3a6b; /* Strong dark blue stats */
+    color: #ef4444; 
 }
 
-/* Target warning boxes specifically */
 .warning-box {
-    border-color: #ffccd5;
-    background-color: #fff5f7;
+    border-color: #fca5a5 !important; 
+    background-color: #fff1f2 !important; 
 }
 
 .warning-box .stat-number {
-    color: #d61c6a; /* Striking magenta warnings */
+    color: #dc2626; 
 }
 
 /* --- Donation Card Grids Layout --- */
@@ -157,81 +154,76 @@ section {
 }
 
 .card {
-    background-color: #ffffff;
-    border: 2px solid #d1dbe5;
+    background-color: #ffffff !important;
+    border: 2px solid #7dd3fc !important; /* Darker, clearer blue border */
     border-radius: 12px;
     padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 4px 12px rgba(10, 25, 47, 0.04);
-    transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-/* Layout variants for individual giving block cards */
 .individual-card {
-    background-color: #fff8fa; /* Soft berry mist card interior */
-    border: 2px solid #ffccd5; /* Darker structural pink framing */
+    background-color: #fff5f5 !important; 
+    border: 2px solid #fca5a5 !important; 
 }
 
 .card:hover {
     transform: translateY(-4px);
-    border-color: #d61c6a; /* Shifts to highlight pink focus border */
+    border-color: #ef4444 !important; 
 }
 
 .card h3 {
     margin: 0 0 10px 0;
-    color: #0a192f;
+    color: #0f172a;
 }
 
 .card p {
     color: #475569;
     font-size: 0.95rem;
-    line-height: 1.5;
     margin: 0 0 20px 0;
 }
 
-/* --- Button Styling Variables --- */
+/* --- Buttons --- */
 .donate-btn {
     display: block;
-    background-color: #1b3a6b; /* Strong Dark Blue primary button */
+    background-color: #ef4444; 
     color: #ffffff;
     text-align: center;
     padding: 12px 20px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: 700;
-    font-size: 0.95rem;
-    transition: background-color 0.15s ease;
 }
 
 .donate-btn:hover {
-    background-color: #0a192f; /* Deepens to black-navy on hover */
+    background-color: #dc2626; 
 }
 
-/* Individual card action exceptions */
 .individual-btn {
-    background-color: #d61c6a; /* Strong Dark Pink primary button */
+    background-color: #dc2626; 
 }
 
 .individual-btn:hover {
-    background-color: #9e0e47; /* Deepens to rich burgundy variant on hover */
+    background-color: #b91c1c; 
 }
 
-/* --- Footer Elements --- */
+/* --- Footer --- */
 footer {
-    background-color: #0a192f;
+    background-color: #0f172a;
     color: #94a3b8;
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-    border-top: 4px solid #1b3a6b;
+    border-top: 4px solid #ef4444;
 }
-/* --- About Me Section Styling --- */
+
+/* --- About Me Section --- */
 .about-me-bg {
-    background-color: #162a45; /* Dark blue background banner to break up the page layout */
+    background-color: #1e293b;
     padding: 60px 20px;
     margin-top: 40px;
+    border-top: 3px solid #ef4444;
 }
 
 .about-me-container {
@@ -240,31 +232,31 @@ footer {
 }
 
 .about-me-container h2 {
-    color: #ffffff; /* White title text */
+    color: #ffffff;
     text-align: center;
     margin-bottom: 30px;
+    border-left: none;
+    padding-left: 0;
 }
 
 .about-me-box {
-    background-color: #ffffff; /* Pop-out crisp white card content */
-    border: 2px solid #ffccd5; /* Delicate dark pink framing ring */
+    background-color: #ffffff;
+    border: 2px solid #fca5a5;
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .about-me-text h3 {
     margin-top: 0;
-    color: #0a192f; /* Deep blue header color */
-    font-size: 1.3rem;
+    color: #0f172a;
 }
 
 .about-me-text p {
     color: #475569;
     line-height: 1.6;
-    font-size: 1rem;
 }
-/* --- Educational Article Section Layout --- */
+
+/* --- Educational Articles --- */
 .article-grid {
     display: flex;
     flex-direction: column;
@@ -273,57 +265,45 @@ footer {
 }
 
 .article-card {
-    background-color: #ffffff;
-    border-left: 5px solid #1b3a6b; /* Accent structural anchor line */
-    border-top: 1px solid #d1dbe5;
-    border-right: 1px solid #d1dbe5;
-    border-bottom: 1px solid #d1dbe5;
+    background-color: #ffffff !important;
+    border: 1px solid #7dd3fc !important; /* Darker blue border */
+    border-left: 5px solid #ef4444 !important; 
     border-radius: 0 10px 10px 0;
     padding: 25px;
-    box-shadow: 0 4px 10px rgba(10, 25, 47, 0.02);
 }
 
-/* Individual accent styling highlights on card hover */
 .article-card:hover {
-    border-left-color: #d61c6a;
+    border-left-color: #991b1b !important;
 }
 
 .article-card h3 {
     margin: 10px 0;
-    color: #0a192f;
+    color: #0f172a;
     font-size: 1.4rem;
-    font-weight: 700;
 }
 
 .article-card p {
     color: #475569;
     font-size: 1rem;
-    line-height: 1.6;
     margin: 0;
 }
 
-/* Metadata Category Tags */
 .article-tag {
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.font-pink {
-    color: #d61c6a;
+.font-red {
+    color: #ef4444;
 }
 
 .font-blue {
-    color: #1b3a6b;
-}
-/* --- Clickable Article Wrappers --- */
-.article-card-link {
-    text-decoration: none; /* Removes standard hyperlinked blue underlines */
-    color: inherit; /* Prevents text elements inside from turning default link blue */
-    display: block; /* Spans the link boundary over the entire box layout area */
+    color: #0284c7;
 }
 
-.article-card-link:focus {
-    outline: 2px dashed #d61c6a; /* Clean accessibility border ring for keyboard users */
+.article-card-link {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
 }
