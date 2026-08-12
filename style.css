@@ -1,205 +1,329 @@
-/* General Page Setup */
+/* --- Document Basics & Font Reset --- */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f7f5;
-    color: #2c3e50;
+    background-color: #f0f4f8; /* Crisp, cool light blue canvas background */
+    color: #1a2a3a; /* High contrast dark charcoal-blue text */
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Fixed Navigation Bar */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- Fixed Top Navbar --- */
 .navbar {
-    background-color: #1b4332;
-    padding: 15px 30px;
+    background-color: #0a192f; /* Deep Royal Navy */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 15px 40px;
+    border-bottom: 3px solid #d61c6a; /* Rich dark pink accent line */
 }
 
 .logo {
-    color: #fff;
-    font-size: 1.4rem;
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.2rem;
 }
 
 .nav-links a {
-    color: #d8f3dc;
+    color: #cbd5e1;
     text-decoration: none;
+    font-weight: 600;
     margin-left: 20px;
-    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #fff;
+    color: #ff60a0; /* Shines dark pink on hover */
 }
 
-/* Impactful Hero Section */
+/* --- Real-Time Counter Bar --- */
+.donation-tracker-bar {
+    background-color: #162a45; /* Medium deep blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: 700;
+    border-bottom: 2px solid #1b3a6b;
+}
+
+#total-raised {
+    font-size: 1.2rem;
+    color: #ff60a0;
+    font-weight: 800;
+    transition: color 0.2s;
+}
+
+/* --- Hero Banner Section --- */
 .hero {
-    background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(45, 106, 79, 0.9)), url('hero-bg.jpg') no-repeat center center/cover;
-    color: white;
+    background: linear-gradient(135deg, #0f2b46 0%, #1a365d 100%);
+    color: #ffffff;
     text-align: center;
     padding: 80px 20px;
 }
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 0 0 15px 0;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #e2e8f0;
 }
 
-/* Planet Tracker Dashboard */
+/* --- Section Layout Structural Adjustments --- */
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0a192f;
+    margin-bottom: 10px;
+}
+
 .section-title {
     text-align: center;
-    color: #1b4332;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
+.subtitle {
+    color: #4a5568;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* --- Planet Tracker Grid Layout --- */
 .tracker-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .tracker-box {
-    background-color: #fff;
+    background-color: #ffffff;
+    border: 2px solid #d1dbe5; /* Slate blue-grey boundaries */
+    border-radius: 10px;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 4px solid #52b788;
-}
-
-.tracker-box.warning-box {
-    border-top: 4px solid #ff9f1c; /* Highlights animal metrics */
-}
-
-.stat-number {
-    display: block;
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #1b4332;
-    margin-bottom: 5px;
-}
-
-.tracker-box.warning-box .stat-number {
-    color: #d67d00;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
 }
 
 .tracker-box h4 {
-    margin: 5px 0;
-    color: #2c3e50;
-    font-size: 1rem;
+    margin: 10px 0 5px 0;
+    color: #1a2a3a;
 }
 
 .tracker-box p {
     margin: 0;
-    font-size: 0.85rem;
-    color: #7f8c8d;
+    font-size: 0.9rem;
+    color: #64748b;
 }
 
-/* Content Layout */
-.container {
-    max-width: 900px;
-    margin: 0 auto 40px auto;
-    padding: 0 20px;
+.stat-number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1b3a6b; /* Strong dark blue stats */
 }
 
-section {
-    background-color: white;
-    padding: 40px;
-    margin-bottom: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+/* Target warning boxes specifically */
+.warning-box {
+    border-color: #ffccd5;
+    background-color: #fff5f7;
 }
 
-section h2 {
-    color: #1b4332;
-    margin-top: 0;
-    border-bottom: 2px solid #b7e4c7;
-    padding-bottom: 10px;
+.warning-box .stat-number {
+    color: #d61c6a; /* Striking magenta warnings */
 }
 
-.subtitle {
-    color: #52b788;
-    font-weight: 500;
-    margin-top: -10px;
-    margin-bottom: 25px;
-}
-
-/* Donation Grid and Cards Layout */
+/* --- Donation Card Grids Layout --- */
 .donation-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-    .donation-grid { grid-template-columns: 1fr; }
-    .tracker-grid { grid-template-columns: 1fr; }
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .card {
-    border: 1px solid #d8f3dc;
+    background-color: #ffffff;
+    border: 2px solid #d1dbe5;
+    border-radius: 12px;
     padding: 25px;
-    border-radius: 8px;
-    background-color: #f8fbf9;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(10, 25, 47, 0.04);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+/* Layout variants for individual giving block cards */
+.individual-card {
+    background-color: #fff8fa; /* Soft berry mist card interior */
+    border: 2px solid #ffccd5; /* Darker structural pink framing */
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #d61c6a; /* Shifts to highlight pink focus border */
 }
 
 .card h3 {
-    margin-top: 0;
-    color: #2d6a4f;
+    margin: 0 0 10px 0;
+    color: #0a192f;
 }
 
-/* Interactive Donation Buttons */
+.card p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+/* --- Button Styling Variables --- */
 .donate-btn {
     display: block;
+    background-color: #1b3a6b; /* Strong Dark Blue primary button */
+    color: #ffffff;
     text-align: center;
-    background-color: #2d6a4f;
-    color: white;
-    padding: 12px;
+    padding: 12px 20px;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background 0.2s;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: background-color 0.15s ease;
 }
 
 .donate-btn:hover {
-    background-color: #1b4332;
+    background-color: #0a192f; /* Deepens to black-navy on hover */
 }
 
-/* Distinct Style for Individual Aid Cards */
-.individual-card {
-    border-left: 5px solid #ff9f1c;
-}
-
+/* Individual card action exceptions */
 .individual-btn {
-    background-color: #ff9f1c;
+    background-color: #d61c6a; /* Strong Dark Pink primary button */
 }
 
 .individual-btn:hover {
-    background-color: #e08500;
+    background-color: #9e0e47; /* Deepens to rich burgundy variant on hover */
 }
 
-/* Footer styling */
+/* --- Footer Elements --- */
 footer {
+    background-color: #0a192f;
+    color: #94a3b8;
     text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 4px solid #1b3a6b;
+}
+/* --- About Me Section Styling --- */
+.about-me-bg {
+    background-color: #162a45; /* Dark blue background banner to break up the page layout */
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.about-me-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-me-container h2 {
+    color: #ffffff; /* White title text */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-me-box {
+    background-color: #ffffff; /* Pop-out crisp white card content */
+    border: 2px solid #ffccd5; /* Delicate dark pink framing ring */
+    border-radius: 12px;
     padding: 30px;
-    background-color: #1b4332;
-    color: #d8f3dc;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-me-text h3 {
+    margin-top: 0;
+    color: #0a192f; /* Deep blue header color */
+    font-size: 1.3rem;
+}
+
+.about-me-text p {
+    color: #475569;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+/* --- Educational Article Section Layout --- */
+.article-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.article-card {
+    background-color: #ffffff;
+    border-left: 5px solid #1b3a6b; /* Accent structural anchor line */
+    border-top: 1px solid #d1dbe5;
+    border-right: 1px solid #d1dbe5;
+    border-bottom: 1px solid #d1dbe5;
+    border-radius: 0 10px 10px 0;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(10, 25, 47, 0.02);
+}
+
+/* Individual accent styling highlights on card hover */
+.article-card:hover {
+    border-left-color: #d61c6a;
+}
+
+.article-card h3 {
+    margin: 10px 0;
+    color: #0a192f;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.article-card p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Metadata Category Tags */
+.article-tag {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.font-pink {
+    color: #d61c6a;
+}
+
+.font-blue {
+    color: #1b3a6b;
+}
+/* --- Clickable Article Wrappers --- */
+.article-card-link {
+    text-decoration: none; /* Removes standard hyperlinked blue underlines */
+    color: inherit; /* Prevents text elements inside from turning default link blue */
+    display: block; /* Spans the link boundary over the entire box layout area */
+}
+
+.article-card-link:focus {
+    outline: 2px dashed #d61c6a; /* Clean accessibility border ring for keyboard users */
 }

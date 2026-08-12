@@ -4,24 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Warning | Climate & Wildlife Advocacy</title>
+    
+    <!-- Modern Typography Font Link -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+         <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">⚠️ Global Warning</div>
+        <div class="logo">Global Warning</div>
         <div class="nav-links">
             <a href="#metrics">Planet Tracker</a>
             <a href="#about">The Crisis</a>
+            <a href="#articles">Latest Research</a>
             <a href="#organizations">Donate to Orgs</a>
             <a href="#individuals">Direct Aid</a>
+            <a href="#about-me">About Me</a>
         </div>
     </nav>
 
-    <!-- Hero Header -->
+    <!-- Live Donation Tracker Bar -->
+    <div class="donation-tracker-bar">
+        <p>annually our listed partners raise roughly: <span id="total-raised">$435,960,632</span></p>
+    </div>
+
+    <!-- Hero Header Banner -->
     <header class="hero">
-        <h1>Global Warning</h1>
+        <h1>STOP! This Is a Global Warning</h1>
         <p>The climate crisis is unraveling our ecosystems. Support verified organizations and direct grassroots aid to protect vulnerable human communities and wildlife on the brink of extinction.</p>
     </header>
 
@@ -77,38 +90,164 @@
                 <div class="card">
                     <h3>World Wildlife Fund (WWF)</h3>
                     <p>Protecting endangered species, restoring habitats, and defending arctic ice systems.</p>
-                    <a href="https://www.worldwildlife.org" target="_blank" class="donate-btn">Donate to WWF</a>
+                    <a href="https://worldwildlife.org" target="_blank" class="donate-btn">Donate to WWF</a>
                 </div>
             </div>
         </section>
 
-        <!-- Individual Aid Section -->
+                      <!-- Individual Aid & Crowdfunding Section -->
         <section id="individuals">
-            <h2>Direct Mutual Aid & Local Rescuers</h2>
-            <p class="subtitle">Directly assist families, indigenous protectors, and wildlife rehabilitation centers.</p>
+            <h2>Direct Mutual Aid & Individual Giving</h2>
+            <p class="subtitle">Directly assist frontline families, indigenous protectors, wildlife rescuers, and individual recovery campaigns.</p>
             
             <div class="donation-grid">
-                <!-- Individual Card 1 -->
+                <!-- Card 1: Environmental Justice Foundation (Climate Displacement) -->
                 <div class="card individual-card">
-                    <h3>Climate Refugee Relief Fund</h3>
-                    <p>Providing direct cash assistance to displaced families relocating due to rising sea levels.</p>
-                    <a href="#" class="donate-btn individual-btn">Support This Cause</a>
+                    <h3>Environmental Justice Foundation</h3>
+                    <p>Securing legal recognition, urgent resources, and human rights protections for communities displaced by extreme global warming events.</p>
+                    <a href="https://ejfoundation.org/secure-international-protection-for-climate-refugees-1" target="_blank" class="donate-btn individual-btn">Support This Cause</a>
                 </div>
-                <!-- Individual Card 2 -->
+
+                <!-- Card 2: Local Wildlife Rescuers -->
                 <div class="card individual-card">
-                    <h3>Wildlife Rescue Bushfire Fund</h3>
-                    <p>Direct grassroots funding for local animal hospitals treating wildlife injured in climate-driven forest fires.</p>
-                    <a href="#" class="donate-btn individual-btn">Support This Sanctuary</a>
+                    <h3>WIRES Wildlife Emergency Fund</h3>
+                    <p>Direct grassroots funding for local animal hospitals treating native wildlife injured in climate-driven forest fires.</p>
+                    <a href="https://wires.org.au" target="_blank" class="donate-btn individual-btn">Support This Sanctuary</a>
+                </div>
+
+                <!-- Card 3: Peer-to-Peer Disaster Relief -->
+                <div class="card individual-card">
+                    <h3>GoFundMe Environment Directory</h3>
+                    <p>Browse individual and family campaigns seeking immediate financial help to rebuild after climate disasters.</p>
+                    <a href="https://gofundme.com" target="_blank" class="donate-btn individual-btn">Fund an Individual</a>
+                </div>
+
+                <!-- Card 4: Chuffed Animal Campaigns Link -->
+                <div class="card individual-card">
+                    <h3>Chuffed Animal Welfare Hub</h3>
+                    <p>Support crowdfunding campaigns started by individuals directly rescuing and protecting vulnerable animals globally.</p>
+                    <a href="https://chuffed.org/animals" target="_blank" class="donate-btn individual-btn">Help Animals Directly</a>
+                </div>
+
+                <!-- Card 5: Grassroots Activism Hub -->
+                <div class="card individual-card">
+                    <h3>Chuffed Climate Justice Hub</h3>
+                    <p>Support independent community activists, legal defense funds, and hyper-local environmental projects.</p>
+                    <a href="https://chuffed.org/climate" target="_blank" class="donate-btn individual-btn">Fund a Campaign</a>
                 </div>
             </div>
         </section>
 
+    </div><!-- End of Main Content Container -->
+             <!-- Educational Articles Section -->
+    <div class="container" id="articles">
+        <h2>Latest Climate Research Briefs</h2>
+        <p class="subtitle">Click any card to read the full scientific report from official news and environmental research bodies.</p>
+        
+        <div class="article-grid">
+            <!-- Article 1: Polar Ice Sheets -->
+            <a href="https://abcnews.com/US/federal-government-ends-support-key-arctic-climate-report/story?id=135559206" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-pink">Arctic Ecosystems</div>
+                    <h3>The Rapid Collapse of Arctic Sea Ice</h3>
+                    <p>Rising global temperatures are drastically altering the poles. Tracking metrics prove the summer ice cover is shrinking fast, accelerating planetary warming loops. Read the full report via ABC News.</p>
+                </article>
+            </a>
+
+            <!-- Article 2: Polar Bears -->
+            <a href="https://abcnews.com/video/107201909/" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-pink">Wildlife Crisis</div>
+                    <h3>Polar Bears Facing Starvation Metrics</h3>
+                    <p>Recent bioenergetic models confirm that prolonged ice-free periods trigger an irreversible calorie deficit for polar bear populations by cutting off access to hunting platforms. Read the full data at ABC News.</p>
+                </article>
+            </a>
+
+            <!-- Article 3: New Orleans -->
+            <a href="https://e360.yale.edu/digest/new-orleans-sea-level-rise" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-blue">Urban Hazards</div>
+                    <h3>New Orleans: Decades from the Edge</h3>
+                    <p>Stark peer-reviewed studies warn that Southern Louisiana has crossed a dangerous point of no return. Rapid land subsidence means New Orleans faces massive encirclement by open gulf water within years. Read the full analysis at Yale Environment 360.</p>
+                </article>
+            </a>
+
+            <!-- Article 4: Amazon Rainforest Tipping Point -->
+            <a href="https://www.nature.com/articles/d41586-026-02449-w?utm_source=facebook&utm_medium=social&utm_campaign=nature&linkId=63189759" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-pink">Ecosystem Tipping Points</div>
+                    <h3>The Amazon Rainforest Dieback Threshold</h3>
+                    <p>Climate modeling warns that local deforestation paired with temperature spikes risks permanently shifting up to 70% of the lush Amazon basin into a dry savanna grassland. Read more via Natural World Fund.
+                    .</p>
+                </article>
+            </a>
+
+            <!-- Article 5: Record Breaking Ocean Temperatures -->
+            <a href="https://abcnews.com/US/highest-ocean-temperatures-recorded-month-noaa/story?id=100107982" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-blue">Ocean Heat Content</div>
+                    <h3>Global Oceans Hit All-Time Surface Heat Highs</h3>
+                    <p>Climate systems confirm global sea surface temperatures have hit historical highs outside polar circles. The oceans are currently trapping roughly 90% of excess planetary heat energy. Read more via ABC News.</p>
+                </article>
+            </a>
+
+            <!-- Article 6: Ocean Acidification & Shell Dissolution -->
+            <a href="https://www.abc.net.au/listen/programs/scienceshow/aquatic-food-webs-under-threat-from-rising-acidity/5368312" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-pink">Marine Chemistry</div>
+                    <h3>Acidifying Waters Threaten Base Marine Food Webs</h3>
+                    <p>As oceans absorb massive carbon loads, chemical mutations are dissolving the base layers of aquatic life. Marine ecosystems face catastrophic disruptions as key micro-organisms struggle to exist. Read more via ABC News.</p>
+                </article>
+            </a>
+
+            <!-- Article 7: Global Economic Damage -->
+            <a href="https://neworleanscitybusiness.com/blog/2026/05/12/new-orleans-sea-level-rise-study-wetland-loss-relocation/" target="_blank" class="article-card-link">
+                <article class="article-card">
+                    <div class="article-tag font-blue">Economic Shockwaves</div>
+                    <h3>The Multi-Billion Dollar Reality of Climate Chaos</h3>
+                    <p>Persistent industrial weather shocks and supply infrastructure failures are lowering outputs. Financial assessments indicate unchecked warming curves will slice heavy value from exposed national GDP records. Read more via CityBusiness.</p>
+                </article>
+            </a>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about-me-bg" id="about-me">
+        <div class="about-me-container">
+            <h2>About The Creator</h2>
+            <div class="about-me-box">
+                <div class="about-me-text">
+                    <h3>Hi, my name is Mariah Parker.</h3>
+                    <p>I am a 15 year old environmental advocate and a beginner independent web developer. I designed Global Warning because most climate websites only focus on massive global organizations. Global Warning is designed to let users split their impact between vetted NGOs and direct direct-aid funds for families and endangered animals displaced by climate disasters.</p>
+                    <p>Scientific accuracy and living beings' wellbeing is my highest priority. I hope to provide clear, actionable tracking tools that empower individuals to make a tangible impact on our planet's future.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2026 Global Warning Advocacy Network.</p>
     </footer>
 
+    <!-- Clean Local Automated Javascript Simulator Script -->
+    <script>
+        let currentTotal = 0;
+        const counterElement = document.getElementById('total-raised');
+        const donateButtons = document.querySelectorAll('.donate-btn, .individual-btn');
+
+        donateButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Instantly add simulated $25 increment locally
+                currentTotal += 25;
+                counterElement.textContent = '$' + currentTotal.toLocaleString();
+                
+                // Color pop interactive flash animation 
+                counterElement.style.color = '#ff60a0'; 
+                setTimeout(() => { 
+                    counterElement.style.color = '#ff60a0'; 
+                }, 500);
+            });
+        });
+    </script>
 </body>
 </html>
-
